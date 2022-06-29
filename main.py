@@ -67,7 +67,20 @@ print(f"The dog's age in dog years is {dog_years}")
 #      isosceles - two sides are the same length
 # 3. Print a message such as:
 #      - A triangle with sides of <a>, <b> & <c> is a <type of triangle> triangle
+print('Enter the length of three sides of a triangle:')
+a = int(input('a: '))
+b = int(input('b: '))
+c = int(input('c: '))
 
+if a == b and b == c:
+    print(
+        f'A triangle with all equal sides: {a}, {b}, {c} \n Is an Equalateral Triangle')
+elif a != b and a != c and b != c:
+    print(
+        f'A triangle with no equal sides: {a}, {b}, {c} \n Is a Scalene Triangle')
+else:
+    print(
+        f'A triangle with 2 equal sides: {a}, {b}, {c} \n Is an Isosceles Triangle')
 
 # exercise-05 Fibonacci sequence for first 50 terms
 
