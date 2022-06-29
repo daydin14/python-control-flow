@@ -28,8 +28,9 @@ else:
 phrase = ''
 while (phrase != 'quit'):
     phrase = input(
-        'Please enter a word or phrase.\n Or enter "quit" to exit\n')
-    print(f'What you entered is {len(phrase)} characters long')
+        'Please enter a word or phrase. \nOr enter "quit" to exit \n')
+    print(
+        f'You entered: {phrase} \nWhat you entered is {len(phrase)} characters long')
 
 
 # exercise-03 Calculate Dog Years
@@ -44,6 +45,12 @@ while (phrase != 'quit'):
 #      The dog's age in dog years is xx
 
 # Hint:  Use the int() function to convert the string returned from input() into an integer
+human_years = int(input("Enter a dog's age in human years: "))
+if human_years < 3:
+    dog_years = human_years * 10
+else:
+    dog_years = 20 + (human_years - 2) * 7
+print(f"The dog's age in dog years is {dog_years}")
 
 
 # exercise-04 What kind of Triangle?
